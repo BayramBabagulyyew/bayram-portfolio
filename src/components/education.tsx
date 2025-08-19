@@ -2,7 +2,6 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import qutLogo from "@/assets/images/qut-Logo.png";
 
 export default function Education() {
   const { ref } = useSectionInView("Education");
@@ -29,22 +28,12 @@ export default function Education() {
 
       <div className="mt-4 flex gap-6 border border-black/5 rounded-lg pt-4 pb-7 px-5 md:p-10 bg-gray-100 dark:bg-white/10 dark:hover:bg-white/20">
         <div>
-          <img src={qutLogo} alt="QUT" width="150" />
-        </div>
-
-        <div>
           <p className="text-lg font-medium">
-            Bachelor of Information Technology
+            Bachelor's in Mobile and Network Engineering
           </p>
-          <p>Queensland University of Technology</p>
-          <p className="mt-1">Graduated in 2023</p>
-          <p className="my-1">GPA 6.2/7</p>
-          <ul className="list-disc pl-6">
-            <li>Major in Computer Science</li>
-            <li>Minor in Networks & Security</li>
-            <li>Minor in Mobile Applications</li>
-            <li>Science & Engineering Dean's List - 2019 & 2021</li>
-          </ul>
+          <p>Oguz Han Engineering and Technological University of Turkmenistan</p>
+          <p className="mt-1">Expected 2027</p>
+          <p className="my-1">3rd-year student</p>
         </div>
       </div>
     </motion.section>

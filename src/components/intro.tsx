@@ -3,13 +3,11 @@ import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
 import ParticleContainer from "./particle-container";
 import githubdp from "@/assets/images/githubdp.png";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -44,9 +42,12 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Bayram.</span> I'm a{" "}
-        <span className="font-bold">backend engineer</span> at{" "}
-        <span className="font-bold">100haryt.com</span>. I specialize in Node.js, NestJS, Express, Fastify, GraphQL, and AWS with over 2 years of experience.
+        <span className="font-bold">Hello, I'm Bayram.</span> I'm a
+        <span className="font-bold"> backend software engineer</span> based in
+        Ashgabat, Turkmenistan. Proficient in Node.js (NestJS, ExpressJS),
+        databases, distributed systems, and backend architecture. Skilled in
+        building robust and flexible solutions, integrating AI, and working on a
+        variety of projects.
       </motion.h1>
 
       <motion.div

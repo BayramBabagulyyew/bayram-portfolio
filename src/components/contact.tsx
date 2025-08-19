@@ -12,7 +12,7 @@ export default function Contact() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent the default form submission
     const formData = new FormData(e.currentTarget); // Get form data
-    const { data, error } = await sendEmail(formData);
+    const { error } = await sendEmail(formData);
 
     if (error) {
       toast.error(error);
@@ -43,9 +43,20 @@ export default function Contact() {
       <SectionHeading>Contact me</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
+        Please contact me directly via email at{" "}
         <a className="underline" href="mailto:babakulyyewbayram8@gmail.com">
           babakulyyewbayram8@gmail.com
+        </a>{" "}, Telegram{" "}
+        <a
+          className="underline"
+          href="https://t.me/bayram_babagulyyev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @bayram_babagulyyev
+        </a>{" "}, phone{" "}
+        <a className="underline" href="tel:+99362509001">
+          +993 62 509001
         </a>{" "}
         or through this form.
       </p>

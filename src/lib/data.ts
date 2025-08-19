@@ -1,14 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import cryptoCrowdImg from "@/assets/images/cryptocrowd2.png";
-import ozdevsImg from "@/assets/images/ozdevs-two.png";
-import assetTradingImg from "@/assets/images/asset-trading.jpg";
-import euphorusImg from "@/assets/images/euphorus-two.png";
-import euphorusBackendImg from "@/assets/images/euphorus-backend.png";
-import techprowlImg from "@/assets/images/techprowl-two.png";
-import taskManagerImg from "@/assets/images/task-manager.png";
-import familyTreeImg from "@/assets/images/bfsproject.jpg";
-import binaryGameImg from "@/assets/images//binary-game.png";
+import placeholderImg from "@/assets/images/githubdp.png";
 
 export const links = [
   {
@@ -39,215 +31,235 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Web Developer",
-    location: "M3 Digital - Contract",
+    title: "Freelance Backend Developer",
+    location: "Self-employed",
     description:
-      "Front-end development for a variety of Shopify stores such as FitazFK, Rider Collective, Masseuse Massage, Francesca Jewellery and Salty Captain. Developed high quality landing pages and front end features using HTML, CSS, SCSS, JavaScript and Liquid.",
+      "Developed a 360-degree virtual tour app, an AI-driven online pharmacy backend, a tea market backend, a template website for Owadanulke, and extended Lemmer CRM for Kip Engineering using technologies such as NestJS, ExpressJS, PostgreSQL and Sequelize.",
     icon: React.createElement(CgWorkAlt),
-    date: "September 2021 - February 2022",
+    date: "May 2023 - Present",
   },
   {
-    title: "Junior Developer",
-    location: "YouPay",
+    title: "Backend Developer",
+    location: "Gozle",
     description:
-      "Developed new features using Laravel, Vue.js, PHP, JavaScript, Tailwind CSS, MySQL and REST APIs. Created an email notification system for mechants to receive weekly/monthly summaries of YouPay carts created, paid and cancelled. I also integrated YouPay into dozens of stores.",
+      "Developed a YouTube-like video platform using NestJS, PostgreSQL, RabbitMQ and Redis. Project was closed before launch.",
     icon: React.createElement(CgWorkAlt),
-    date: "February 2022 - November 2022",
+    date: "Feb 2024 - May 2024",
+  },
+  {
+    title: "Backend Developer",
+    location: "100haryt.com",
+    description:
+      "Built and maintained picker app backend, main backend, discounts service and other microservices using gRPC, NestJS and RabbitMQ for Turkmenistan's leading marketplace.",
+    icon: React.createElement(CgWorkAlt),
+    date: "May 2024 - May 2025",
+  },
+  {
+    title: "Backend Developer",
+    location: "Bereket-Bendi",
+    description:
+      "Continued developing Dinle, a microservices-based music app.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Oct 2024 - Present",
   },
   {
     title: "Software Engineer",
-    location: "The University of Queensland",
+    location: "Kip Engineering",
     description:
-      "Full-stack software engineer in the Application Development and Support team. Worked on web applications such as CAHP (Casual Academic Hire and Payment), UQ Maps, UQ Donations, and Programs and Courses.",
+      "Developed and maintained company CRM (Lemmer) for several organizations and improved network infrastructure while supporting the main website and office tools.",
     icon: React.createElement(CgWorkAlt),
-    date: "November 2022 - January 2024",
+    date: "May 2025 - Present",
   },
   {
-    title: "Software Engineer",
-    location: "Humanforce",
+    title: "Backend Developer",
+    location: "Oguz Han Scientific and Technological Center",
     description:
-      "Software engineer in the intelliHR platform team. We are a feature enablement team dedicated to developing features for developers, ensuring they are easier to create. We also look after issues of scale and technical debt for developers and the platform.",
+      "Developed Zemin mobile football arena booking and market app and built a feature-rich CRM for course centers with salary calculations and management using a TypeScript monorepo with Redis, GraphQL, NestJS and Fastify.",
     icon: React.createElement(CgWorkAlt),
-    date: "January 2024 - Present",
+    date: "Mar 2024 - Present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CryptoCrowd",
+    title: "360° Virtual Tour App",
     description:
-      "Cryptocurrency sentiment analysis website based on Twitter posts. Users can see the overall sentiment (positive, negative or neutral) of different Cryptocurrencies based on what people are currently posting on Twitter. Users can also see keywords and an average sentiment score. Stateless application that uses Elasticache and S3 on AWS. It also used EC2 and auto-scaling to manage demand.",
-    tags: ["JavaScript", "React", "Express.js", "AWS"],
+      "Developed a 360-degree virtual tour app for university.",
     icons: [
-      "logos:aws",
       "logos:javascript",
-      "logos:react",
-      "logos:bootstrap",
       "logos:express",
+      "logos:threejs",
     ],
-    imageUrl: cryptoCrowdImg,
-    githubLink: "https://github.com/ben04rogers/cab432-assignment-2",
-    demoLink: "https://www.youtube.com/watch?v=uhyC0M4WIl4",
+    imageUrl: placeholderImg,
   },
   {
-    title: "OzDevs",
+    title: "AI-integrated Online Pharmacy Backend",
     description:
-      "Reverse Job board for companies looking to hire developers in Australia. Filter by experience, location and keyboards.  Companies can pay a monthly fee to be able to message developers on the site and view their information.",
-    tags: ["PHP", "Laravel", "JavaScript", "Tailwind", "MySQL"],
+      "Backend with AI-based syndrome search and price comparison.",
     icons: [
-      "logos:laravel",
-      "logos:php",
-      "logos:javascript",
-      "devicon:tailwindcss",
-      "logos:mysql",
+      "logos:express",
+      "logos:graphql",
+      "logos:postgresql",
+      "logos:sequelize",
     ],
-    imageUrl: ozdevsImg,
-    urlLink: "https://clownfish-app-48u2r.ondigitalocean.app/",
-    githubLink: "https://github.com/ben04rogers/ozdevs-v2",
+    imageUrl: placeholderImg,
   },
   {
-    title: "Company Asset Trading",
+    title: "Tea Market Web Backend",
     description:
-      "Client-server system written in Java for trading of virtual assets within departments of a company. Facilitated trades via a marketplace model where users can buy and sell assets. Admins of an organisation can create assets, users and modify details. Uses MariaDB as a database and Swing for the GUI.",
-    tags: ["Java", "MariaDB", "Swing"],
-    icons: ["logos:java", "logos:mariadb-icon"],
-    imageUrl: assetTradingImg,
-    githubLink: "https://github.com/ben04rogers/organisation-asset-trading",
-  },
-  // {
-  //   title: "Euphorus",
-  //   description:
-  //     "React application for viewing country happiness data collected from the World Happiness Report initiative. Users can filter by year, country and search limit. AG Grid and Chart.js were used to present the data.",
-  //   tags: ["JavaScript", "React", "Bootstrap"],
-  //   icons: ["logos:javascript", "logos:react", "logos:bootstrap"],
-  //   imageUrl: euphorusImg,
-  //   githubLink: "https://github.com/ben04rogers/cab230assignment1",
-  // },
-  // {
-  //   title: "Country Happiness API",
-  //   description:
-  //     "Developed and deployed an Express API to support the front-end of the Euphorus Happiness Data web application. Routes support query parameters and authorization using JWT. Includes endpoints for countries, rankings, factors, registration, login, and profile. Tested software extensively with Jest and created Swagger documentation for the API as well.      ",
-  //   tags: ["JavaScript", "Node.js", "Express.js", "Swagger", "MySQL"],
-  //   icons: ["logos:javascript", "logos:express", "logos:swagger", "cib:mysql"],
-  //   imageUrl: euphorusBackendImg,
-  //   githubLink: "https://github.com/ben04rogers/cab230assignment2",
-  // },
-  {
-    title: "Techprowl Computer Auction",
-    description:
-      "Computer auction application built with Flask. The site allows users to register, bid on items, leave reviews, post new listings, manage listings, search by keyword, and keep a watch list. ",
-    tags: ["Python", "Flask", "Bootstrap", "SQLite"],
-    icons: ["logos:python", "logos:bootstrap", "logos:sqlite"],
-    imageUrl: techprowlImg,
-    githubLink: "https://github.com/ben04rogers/computer-auction",
-    urlLink: "https://techprowl.herokuapp.com",
+      "Backend for a tea market website.",
+    icons: [
+      "logos:express",
+      "logos:postgresql",
+      "logos:sequelize",
+    ],
+    imageUrl: placeholderImg,
   },
   {
-    title: "Task Manager Console App",
+    title: "Owadanulke Website",
     description:
-      "Console app that manages tasks in a project. Users can load projects from a file and generate a seqeuence to complete them in, based on each task's dependencies. Users can also find earliest possible commencement time of each task, add new tasks, update tasks, remove tasks, and save the results to a text file.",
-    tags: ["C#"],
-    icons: ["devicon:csharp"],
-    imageUrl: taskManagerImg,
-    githubLink: "https://github.com/ben04rogers/task-manager",
+      "Template website backend for Owadanulke.",
+    icons: [
+      "logos:nestjs",
+      "logos:sequelize",
+      "logos:postgresql",
+    ],
+    imageUrl: placeholderImg,
   },
   {
-    title: "Family Tree Shortest Path",
+    title: "Lemmer CRM for Kip Engineering",
     description:
-      "Python program that implements a breadth-first search algorithm to generate a minimal spanning tree. Problem was to calculate a shortest path from a starting vertex in a graph to each other vertex. The vertices represent people and each person is related to every other person through parent-child relationships. A person can see how they are related to each other person in the tree",
-    tags: ["Python"],
-    icons: ["logos:python"],
-    imageUrl: familyTreeImg,
-    githubLink: "https://github.com/ben04rogers/breadth-first-search",
-    demoLink: "https://www.youtube.com/watch?v=VXCZKsqupxA",
+      "Added new unit and maintained Lemmer CRM.",
+    icons: [
+      "logos:nestjs",
+      "logos:postgresql",
+    ],
+    imageUrl: placeholderImg,
   },
   {
-    title: "Arduino Binary Game",
+    title: "Dinle Music App",
     description:
-      "Binary game written in C that runs on an Arduino Uno using Tinkercad. The game aims to help users learn binary by challenging them to input different integers in their binary form within a time limit.",
-    tags: ["C"],
-    icons: ["devicon:c"],
-    imageUrl: binaryGameImg,
-    githubLink: "https://github.com/ben04rogers/binary-game-microcontroller",
-    demoLink: "https://www.youtube.com/watch?v=A6n6XDk4Unw&feature=youtu.be",
+      "Microservices-based music app backend.",
+    icons: [
+      "logos:nestjs",
+      "logos:rabbitmq-icon",
+      "carbon:microservices",
+    ],
+    imageUrl: placeholderImg,
+  },
+  {
+    title: "Zemin Football Arena App",
+    description:
+      "Mobile football arena booking and market app.",
+    icons: [
+      "logos:typescript-icon",
+      "logos:nestjs",
+      "logos:fastify",
+    ],
+    imageUrl: placeholderImg,
+  },
+  {
+    title: "Course Center CRM",
+    description:
+      "Feature-rich CRM for course centers with salary calculations and management.",
+    icons: [
+      "logos:typescript-icon",
+      "logos:redis",
+      "logos:graphql",
+      "logos:nestjs",
+      "logos:fastify",
+    ],
+    imageUrl: placeholderImg,
   },
 ] as const;
 
 export const skillsData = [
   {
-    name: "JavaScript",
-    icon: "logos:javascript",
-  },
-  {
-    name: "TypeScript",
-    icon: "logos:typescript-icon",
-  },
-  {
-    name: "React",
-    icon: "logos:react",
-  },
-  {
     name: "Node.js",
     icon: "logos:nodejs-icon",
   },
   {
-    name: "PHP",
-    icon: "logos:php",
+    name: "ExpressJS",
+    icon: "logos:express",
   },
   {
-    name: "Laravel",
-    icon: "logos:laravel",
+    name: "Fastify",
+    icon: "logos:fastify",
   },
   {
-    name: "Symfony",
-    icon: "logos:symfony",
+    name: "NestJS",
+    icon: "logos:nestjs",
   },
   {
-    name: "Python",
-    icon: "logos:python",
+    name: "AdonisJS",
+    icon: "devicon:adonisjs",
   },
   {
-    name: "Java",
-    icon: "logos:java",
+    name: "GraphQL",
+    icon: "logos:graphql",
   },
   {
-    name: "HTML",
-    icon: "vscode-icons:file-type-html",
+    name: "PostgreSQL",
+    icon: "logos:postgresql",
   },
   {
-    name: "CSS",
-    icon: "vscode-icons:file-type-css",
+    name: "MSSQL",
+    icon: "logos:microsoft-sql-server",
   },
   {
-    name: "SCSS",
-    icon: "logos:sass",
-  },
-  {
-    name: "Git",
-    icon: "logos:git-icon",
+    name: "MariaDB",
+    icon: "logos:mariadb",
   },
   {
     name: "MySQL",
     icon: "logos:mysql",
   },
   {
+    name: "MongoDB",
+    icon: "logos:mongodb-icon",
+  },
+  {
+    name: "Redis",
+    icon: "logos:redis",
+  },
+  {
+    name: "gRPC",
+    icon: "logos:grpc",
+  },
+  {
+    name: "Kafka",
+    icon: "logos:apache-kafka",
+  },
+  {
+    name: "RabbitMQ",
+    icon: "logos:rabbitmq-icon",
+  },
+  {
+    name: "BullMQ",
+    icon: "simple-icons:bullmq",
+  },
+  {
+    name: "Sequelize",
+    icon: "logos:sequelize",
+  },
+  {
+    name: "TypeORM",
+    icon: "logos:typeorm",
+  },
+  {
+    name: "Microservices",
+    icon: "carbon:microservices",
+  },
+  {
+    name: "Networking",
+    icon: "mdi:network",
+  },
+  {
     name: "Linux",
     icon: "flat-color-icons:linux",
   },
   {
-    name: "AWS",
-    icon: "logos:aws",
-  },
-  {
-    name: "Docker",
-    icon: "logos:docker-icon",
-  },
-  {
-    name: "Jenkins",
-    icon: "devicon:jenkins",
-  },
-  {
-    name: "Shopify",
-    icon: "logos:shopify",
+    name: "AI integration",
+    icon: "logos:openai",
   },
 ] as const;

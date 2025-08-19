@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import type { SectionName } from "@/lib/types";
 import React, { useState, createContext, useContext } from "react";
 
